@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="style1.css" rel="stylesheet">
+    <title>Empiezo simple👶🏽</title>
+</head>
+<body>
+    <div class="row container-fluid">
+        <header class="col-6 container-fluid"> 
+        <h1>Sumá dos números</h1>
+        </header>
+        <p> Dame el primer número:</p>
+        <div class="col-6 container-fluid">
+        <input type="text" id="primer_valor">
+        </div>
+        <p class="mt-3">Dame el segundo número:</p>
+        <div class="col-6 container-fluid">
+            <input type="text" id="segundo_valor">
+        </div>
+    </div>
+    <input type="button" value="Calcular" id="boton">
+    <input type="button" value="Otra suma" id="nueva_suma">
+    <script>
+        let input1 = document.getElementById("primer_valor");
+        let input2 = document.getElementById("segundo_valor");
+        let botoncito = document.getElementById("boton");
+        botoncito.addEventListener("click", suma);
+        function suma() {
+                let valor1 = parseInt(input1.value);
+                let valor2 = parseInt(input2.value);
+                let resultado = valor1 + valor2;
+                let div = document.createElement("div");
+                div.innerText = "El resultado de tu suma es: " + resultado;
+                document.body.appendChild(div);
+                div.className="final"
+        }
+        let refrescarPag = document.getElementById("nueva_suma");
+        refrescarPag.addEventListener("click", borrar)
+        function borrar(){
+            window.location.reload(true)
+        }
+
+    </script>
+</body>
+</html>
