@@ -1,0 +1,44 @@
+* {
+  background-color: lightsalmon;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2%;
+  font-size: 2em;
+  color: black;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: black;
+}
+
+body {
+  background-color: lightsalmon;
+}
+
+input {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 3em;
+  background-color: white;
+}
+
+#soñarEsGratis,
+#borrarTodo {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.final {
+  margin: auto;
+  width: 25%;
+  background-color: rgb(248, 212, 218);
+  border-radius: 3em;
+  border-style: solid;
+  border-color: black;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
