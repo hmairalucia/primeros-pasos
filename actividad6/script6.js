@@ -1,20 +1,23 @@
 let nombre = document.getElementById("nombres");
 let botonEnviar = document.getElementById("listoLosNombres");
 botonEnviar.addEventListener("click", guardarEnElArreglo);
+let arrNombres = [];
 
-function guardarEnElArreglo (){
-    let arrNombres = [];
-    for (let i = 0; i < 5; i++){
-        arrNombres.push(nombre.value);
-        //¿Cómo hago para que acá espere a que la usuaria ingrese otro nombre para volver a cargar la página?
-        window.location.reload(true);
-    }
-    crearDiv("Los nombres que ingresaste: " + arrPares.join(", "), "final");
+function guardarEnElArreglo() {
+  if (arrNombres.length <= 4) {
+    console.log(arrNombres.length);
+    arrNombres.push(nombre.value);
+    document.getElementById("nombres").value = ""; // Para limpiar el input y que pueda ingresar otro valor
+    console.log(arrNombres);
+  }
+  if (arrNombres.length == 5) {
+    crearDiv("Los nombres que ingresaste: " + arrNombres.join(", "), "final");
+  }
 }
 
-function crearDiv(texto, clase){
-    let div = document.createElement("div");
-    div.innerText = texto; 
-    document.body.appendChild(div);
-    div.className = clase;
+function crearDiv(texto, clase) {
+  let div = document.createElement("div");
+  div.innerText = texto;
+  document.body.appendChild(div);
+  div.className = clase;
 }
