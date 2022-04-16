@@ -19,20 +19,29 @@ body {
   background-color: lightsteelblue;
 }
 
+
+
 input {
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 0.6%;
+  margin-bottom: 0.6%;
   border-radius: 3em;
   background-color: white;
 }
 
 .final {
   margin: auto;
-  width: 20%;
+  width: 25%;
   background-color: lightslategray;
   border-radius: 3em;
   border-style: solid;
   border-color: white;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
+}
+
+.input-orden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
