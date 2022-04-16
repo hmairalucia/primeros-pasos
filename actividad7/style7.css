@@ -1,0 +1,48 @@
+* {
+    background-color: #FF5200;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+h1 {
+    margin-top: 2%;
+    font-size: 2em;
+    color: black;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  body {
+    background-color: #FF5200;
+  }
+  
+  input {
+    margin-top: 0.6%;
+    margin-bottom: 0.6%;
+    border-radius: 3em;
+    background-color: #F7F09B;
+  }
+
+  /* # de dos colores copados para usar en esta página: este bordó #C31207 y este violeta #77024D */
+
+  .final {
+      color: white;
+    margin: auto;
+    width: 25%;
+    background-color: #C31207;
+    border-radius: 3em;
+    border-style: solid;
+    border-color: white;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+  
+  .input-orden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
